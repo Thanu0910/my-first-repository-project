@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="adminDashboard.css">
+
+    <!---- Iconscout CSS-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Admin Dashboard Panel</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="logo.png" alt="">
+            </div>
+
+            <span class="logo_name">IslandArtNight</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="#">
+                        <i class="uil uil-estate"></i>
+                        <span class="link-name">Dashboard</span>
+                    </a></li>
+                <li><a href="#">
+                        <i class="uil uil-book-medical"></i>
+                        <span class="link-name">Add Events</span>
+                    </a></li>
+                <li><a href="#">
+                        <i class="uil uil-image-plus"></i>
+                        <span class="link-name">Add Arts</span>
+                    </a></li>
+                <li><a href="#">
+                        <i class="uil uil-video"></i>
+                        <span class="link-name">Add Tutorials</span>
+                    </a></li>
+                <li><a href="#">
+                        <i class="uil uil-calendar-alt"></i>
+                        <span class="link-name">Events</span>
+                    </a></li>
+                <li><a href="#">
+                        <i class="uil uil-bell"></i>
+                        <span class="link-name">Subscribers</span>
+                    </a></li>
+            </ul>
+
+
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+            <div class="menu-items1">
+                <ul class="logout-mode">
+
+                    <li><a href="#">
+                            <i class="uil uil-signout"></i>
+                            <span class="link-name">Logout</span>
+                        </a></li>
+                    <li class="mode">
+                        <a href="#">
+                            <i class="uil uil-moon"></i>
+                            <span class="link-name">Dark Mode</span>
+                        </a>
+
+                        <div class="mode-toggle">
+                            <span class="switch"></span>
+                        </div>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="dash-content">
+            <div class="overview">
+                <div class="title">
+                    <i class="uil uil-tachometer-fast-alt"></i>
+                    <span class="text">Dashboard</span>
+                </div>
+
+                <div class="boxes">
+                    <div class="box box1">
+                        <a href="addEvent.html">
+                            <i class="uil uil-plus"></i>
+                            <br>
+                            <span class="text">Add Events</span>
+                        </a>
+
+                    </div>
+                    <div class="box box2">
+                        <a href="viewEvent.html">
+                            <i class="uil uil-schedule"></i>
+                            <br>
+                            <span class="text">View Events</span>
+                        </a>
+                    </div>
+                    <div class="box box3">
+                        <a href="">
+                            <i class="uil uil-rotate-360"></i>
+                            <br>
+                            <span class="text">Update Events</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="activity">
+                <div class="title">
+                    <i class="uil uil-clock-three"></i>
+                    <span class="text">Recent Activity</span>
+                </div>
+
+                <div class="activity-data">
+                    <div class="data names">
+                        <span class="data-title">Name</span>
+                        <span class="data-list">Prasanna M</span>
+                        <span class="data-list">Shreyas</span>
+                        <span class="data-list">Manish</span>
+                        <span class="data-list">Pratheek</span>
+                        <span class="data-list">Prajwal B</span>
+                        <span class="data-list">Ganesh Prasad</span>
+                        <span class="data-list">Shrijith</span>
+                    </div>
+                    <div class="data email">
+                        <span class="data-title">Email</span>
+                        <span class="data-list">prasannam@gmail.com</span>
+                        <span class="data-list">shreyas@gmail.com</span>
+                        <span class="data-list">manish@gmail.com</span>
+                        <span class="data-list">pratheek@gmail.com</span>
+                        <span class="data-list">prajwalb@gmail.com</span>
+                        <span class="data-list">ganeshprasad@gmail.com</span>
+                        <span class="data-list">shrijith@gmail.com</span>
+                    </div>
+                    <div class="data joined">
+                        <span class="data-title">Joined</span>
+                        <span class="data-list">2022-10-01</span>
+                        <span class="data-list">2022-10-03</span>
+                        <span class="data-list">2022-10-02</span>
+                        <span class="data-list">2022-10-03</span>
+                        <span class="data-list">2022-10-01</span>
+                        <span class="data-list">2022-10-02</span>
+                        <span class="data-list">2022-10-03</span>
+                    </div>
+                    <div class="data type">
+                        <span class="data-title">Type</span>
+                        <span class="data-list">Subscriber</span>
+                        <span class="data-list">Subscriber</span>
+                        <span class="data-list">New</span>
+                        <span class="data-list">New</span>
+                        <span class="data-list">New</span>
+                        <span class="data-list">New</span>
+                        <span class="data-list">New</span>
+                    </div>
+                    <div class="data status">
+                        <span class="data-title">Status</span>
+                        <span class="data-list">Active</span>
+                        <span class="data-list">Active</span>
+                        <span class="data-list">Offline</span>
+                        <span class="data-list">Offline</span>
+                        <span class="data-list">Offline</span>
+                        <span class="data-list">Offline</span>
+                        <span class="data-list">Offline</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <script src="adminDashboard.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(90, 90, 245);
+}
+
+.container{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    background-color: white;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container header{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.container header::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
+    border-radius: 8px;
+    background-color: rgb(70, 70, 245);
+}
+
+.container form{
+    position: relative;
+    margin-top: 16px;
+    min-height: 490px;
+    background-color: white;
+}
+
+.container form .details{
+    margin-top: 30px;
+}
+
+.container form .title{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: rgb(69, 31, 31);
+}
+
+form .fields .input-field{
+    display: flex;
+    width: calc(100% - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+.input-field label{
+    font-size: 12px;
+    font-weight: 500;
+    color: black;
+}
+
+.input-field input{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(98, 41, 41);
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+
+.input-field input:is(:focus, :valid){
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+
+.input-field input[type="date"]{
+    color: gray;
+}
+
+.input-field input[type="date"]:valid{
+    color: rgb(65, 23, 23);
+}
+
+.button {
+    display: block;
+    height: 50px;
+    margin: 45px;
+    padding: 0;
+    background: rgb(11, 179, 179);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: darkcyan;
+}
+
+.button:active{
+    background: rgb(1, 62, 62);
+}
+
+.button__text ,
+.button__icon {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 24px;
+    color: white;
+    height: 100%;
+}
+
+.button__text a{
+    color: white;
+    text-decoration: none;
+}
+
+.button__icon {
+    font-size: 1.5em;
+    background: rgba(0, 0, 0, 0.08);
+}
+
+.button1 {
+    float: left;
+}
+
+.button2 {
+    float: right;
+}
+
+.button3{
+    display: block;
+    width: 49%;
+    float: left;
+    padding: 0 55px;
+}
+
+.button4{
+    display: block;
+    width: 49%;
+    float: right;
+    padding: 0 180px;
+}
+
+.buttons {
+    display: block;
+    height: 50px;
+    margin: 45px;
+    padding: 0;
+    background: rgb(211, 42, 42);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.buttons:hover {
+    background: rgb(149, 15, 15);
+}
+
+.buttons:active{
+    background: rgb(78, 4, 2);
+}
+
+
+@media (max-width: 477px) {
+
+    .button1 {
+        margin-top: -18px;
+    }
+
+    .button2 {
+        margin-top: -40px;
+    }
+
+    .button3{
+        margin-top: -40px;
+    }
+
+    .button4{
+        margin-top: -45px;
+        padding: 0 250px;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="login.css">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="login-form">
+        <div class="form-title">
+            Admin Login
+        </div>
+        <div class="form-input">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email Address" required>
+        </div>
+
+        <div class="form-input">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password" required>
+        </div>
+
+        <div class="captcha">
+            <label for="captcha-input">Enter Captcha</label>
+            <div class="preview"></div>
+            <div class="captcha-form">
+                <input type="text" id="captcha-form" placeholder="Enter the Captcha text">
+                <button class="captcha-refresh">
+                    <i class='bx bx-refresh'></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="form-input">
+            <button id="login-btn">Login</button>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+
+</html>
